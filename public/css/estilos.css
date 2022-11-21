@@ -1,0 +1,58 @@
+html, body {
+	width: 100%;
+	height: 100%;
+  background: rgb(255, 255, 255);
+}
+div.container {
+	background: rgb(255, 255, 255) url(../img/Logo.png) center no-repeat ;
+  background-size: contain;
+	height: 100%;
+	width: 100%;
+
+
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+  .scanner span {
+    color: transparent;
+    font-size: 3.4rem;
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+  .scanner span::before {
+    content: "BIENVENIDOS...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid #00caed;
+    overflow: hidden;
+    color: #00caed;
+    animation: load91371 7s linear infinite;
+  }
+  
+  @keyframes load91371 {
+    0%, 10%, 100% {
+      width: 0;
+    }
+  
+    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+      border-right-color: transparent;
+    }
+  
+    11%,21%,31%,41%,51%,61%,71%,81%,91% {
+      border-right-color: #17ffdc;
+    }
+  
+    60%, 80% {
+      width: 100%;
+    }
+  }
+
+  
