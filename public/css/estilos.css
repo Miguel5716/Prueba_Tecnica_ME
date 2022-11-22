@@ -3,7 +3,7 @@ html, body {
 	height: 100%;
   background: rgb(255, 255, 255);
 }
-div.container {
+div.container_ini {
 	background: rgb(255, 255, 255) url(../img/Logo.png) center no-repeat ;
   background-size: contain;
 	height: 100%;
