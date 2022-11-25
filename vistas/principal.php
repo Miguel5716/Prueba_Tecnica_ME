@@ -15,33 +15,28 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-pri">
   <div class="container-fluid">
-    <a class="navbar-brand" href="?view=home"><img src="public/img/IconoPijaos.ico" class="img-responsive"> PIJAOS SALUD EPSI</a>
- 
-    <div class="collapse navbar-collapse" id="navbarText">
+    <a class="navbar-brand" href="?view=home"><img src="public/img/IconoPijaos.ico" class="img-responsive"><button class="btn_header"> PIJAOS SALUD EPSI</button></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="?view=paciente"><i class="fa-solid fa-hospital-user"></i>  PACIENTES</a>
+        <a class="nav-link" aria-current="page" href="?view=paciente"><button class="btn_header"><i class="fa-solid fa-hospital-user"></i>  PACIENTES</button></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?view=hospitales"><i class="fa-solid fa-hospital"></i>  HOSPITALES</a>
+        <a class="nav-link " href="?view=hospitales"><button class="btn_header"><i class="fa-solid fa-hospital"></i>  HOSPITALES</button></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fa-solid fa-bed-pulse"></i>  GESTION HOSPITALARIA
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="?view=gestion_hospitalaria"><i class="fa-solid fa-clipboard-user"></i>   REGISTAR GESTION HOSPITALARIA</a></li>
-            <li><hr class="dropdown-divider"></li>
-          </ul>
+        <li class="nav-item">
+        <a class="nav-link " href="?view=gestion_hospitalaria"><button class="btn_header"><i class="fa-solid fa-hospital"></i>  GESTION HOSPITALARIA</button></a>
         </li>
-      </ul>
+        </ul>
     </div>
   </div>
 </nav>
-
-
+<br>
 
 </body>
 </html>

@@ -15,44 +15,54 @@ div.container_ini {
 	margin: 0;
 	padding: 0;
 }
+.navbar-pri {
+  background: linear-gradient(to right, #003A77 50%, #1984BE 100%);
+}
 
-  .scanner span {
-    color: transparent;
-    font-size: 3.4rem;
-    position: relative;
-    overflow: hidden;
 
-  }
+.btn_header {
   
-  .scanner span::before {
-    content: "BIENVENIDOS...";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: 4px solid #00caed;
-    overflow: hidden;
-    color: #00caed;
-    animation: load91371 7s linear infinite;
-  }
-  
-  @keyframes load91371 {
-    0%, 10%, 100% {
-      width: 0;
-    }
-  
-    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
-      border-right-color: transparent;
-    }
-  
-    11%,21%,31%,41%,51%,61%,71%,81%,91% {
-      border-right-color: #17ffdc;
-    }
-  
-    60%, 80% {
-      width: 100%;
-    }
-  }
+  margin: 0.5em;
+  background: #003A77;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 5px;
+ }
+ 
+ .btn_header:hover {
+  color: black;
+ }
+ 
+ .btn_header:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 1s;
+ }
+ 
+ .btn_header:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+ }
 
-  
+.navbar{
+  border: none;
+  border-radius: 0.625em;
+  padding: 0.1%;
+}
+
+
